@@ -41,6 +41,8 @@ The A2K's instructions follows the format below:
 |or         |0 0 0 0 1 1|1 1 1 0 0 |
 |nor        |0 0 0 1 0 0|1 1 0 1 1 |
 |xor        |0 0 0 1 0 1|1 1 0 1 0 |
+|slt        |0 0 1 0 0 0|1 1 0 0 0 |
+|seq        |0 0 1 0 0 1|1 0 0 0 0 |
 
 
 ***I-type***
@@ -52,11 +54,8 @@ The A2K's instructions follows the format below:
 |sw         |1 0 0 0 1 0|
 |andi       |1 0 0 0 1 1|
 |ori        |1 0 0 1 0 0|
-|sll        |1 0 0 1 0 1|
-|srl        |1 0 0 1 1 0|
-|slt        |1 0 0 1 1 1|
-|beq        |1 0 1 0 0 0|
-|bne        |1 0 1 0 0 1|
+|beq        |1 0 0 1 0 1|
+|bne        |1 0 0 1 1 0|
 
 
 ***J-type***	
