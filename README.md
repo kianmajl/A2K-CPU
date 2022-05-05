@@ -4,7 +4,7 @@ by having very simple and reduced instruction set it can be used for educational
 
 
 ## Architecture
-Inspired by the MIPS and [Dosage CPU](https://github.com/arshiahemmat/Dosage-Cpu), its instruction set has 16 instructions. Its general architecture looks like a MIPS unicycle.
+Inspired by the MIPS and [Dosage CPU](https://github.com/arshiahemmat/Dosage-Cpu), it has 16 instructions and 32 registers. Its general architecture looks like a MIPS unicycle.
 
 
 ## Instruction Set Architecture
