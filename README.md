@@ -63,3 +63,5 @@ The A2K's instructions follows the format below:
 |-----------|-----------|
 |j          |1 1 1 1 1 1|
 
+
+Collaborators: [Alireza Tabatabaei](https://github.com/Tabatabaei1999), [Adrina Ebrahimi](https://github.com/adrina-ei), and [Kian Majlessi](https://github.com/kianmajl)
