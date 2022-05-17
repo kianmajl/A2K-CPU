@@ -10,13 +10,13 @@ Inspired by the MIPS and [Dosage CPU](https://github.com/arshiahemmat/Dosage-Cpu
 ## Instruction Set Architecture
 The A2K's instructions follows the format below:
 
-	    OpCode             Func              Rs               Rt               Rd               Sa
-	/-----------\      /---------\      /---------\      /---------\      /---------\      /---------\  - R-type instruction
- 	 0 0 0 0 0 0        0 0 0 0 0        0 0 0 0 0        0 0 0 0 0        0 0 0 0 0        0 0 0 0 0
+	    OpCode             Rs               Rt               Rd              Func               Cnst
+	/-----------\      /---------\      /---------\      /---------\      /---------\      /------------\  - R-type instruction
+ 	 0 0 0 0 0 0        0 0 0 0 0        0 0 0 0 0        0 0 0 0 0        0 0 0 0 0        0 0 0 0 0 0
    
    and
    
-        OpCode              Rt               Rs                             Imm
+        OpCode             Rs               Rt                             Imm
 	/-----------\      /---------\      /---------\          /-------------------------------\          - I-type instruction
  	 0 0 0 0 0 0        0 0 0 0 0        0 0 0 0 0            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
    
