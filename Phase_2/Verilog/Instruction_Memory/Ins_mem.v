@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Ins_mem(input[15:0] address, output[31:0] data);
 
-	reg[31:0] memory [0:65536];
+	reg[31:0] memory [0:65535];
 	
 	initial
 		$readmemh("code.txt",memory);
