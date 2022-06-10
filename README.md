@@ -64,4 +64,10 @@ The A2K's instructions follows the format below:
 |j          |1 1 1 1 1 1|
 
 
+
+## Assembler
+Also, this project includes an assembler which is in Phase_2/Assembler/Assembler.py. More information on its readme.md
+
+
+
 Collaborators: [Alireza Tabatabaei](https://github.com/Tabatabaei1999), [Adrina Ebrahimi](https://github.com/adrina-ei), and [Kian Majlessi](https://github.com/kianmajl)
