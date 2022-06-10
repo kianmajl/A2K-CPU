@@ -66,8 +66,10 @@ The A2K's instructions follows the format below:
 
 
 ## Assembler
-Also, this project includes an assembler which is in Phase_2/Assembler/Assembler.py. More information on its readme.md
+Also, this project includes an assembler which is in Phase_2/Assembler/[Assembler.py](https://github.com/kianmajl/A2K-CPU/blob/main/Phase_2/Assembler/Assembler.py). More information on its readme.md
 
 
+## Hardware Description
+A2K's hardware is descripted in Verilog which is added in Phase_2/[Verilog](https://github.com/kianmajl/A2K-CPU/tree/main/Phase_2/Verilog)
 
 Collaborators: [Alireza Tabatabaei](https://github.com/Tabatabaei1999), [Adrina Ebrahimi](https://github.com/adrina-ei), and [Kian Majlessi](https://github.com/kianmajl)
