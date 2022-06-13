@@ -94,15 +94,15 @@ def Decoder(lines: list) -> list:
     for word in lines:
         if word[0] in R_op_dict:
             # add rd, rs, rt
-            # -> op(6) rs rt rd constant fun(6)
+            # -> OpCode(6) rs rt rd fun(6) constant
+    
             assemly = ''
             assemly += R_op_dict[word[0]] # op            
             assemly += register_dict[word[2]] # rs
             assemly += register_dict[word[-1]] # rt
             assemly += register_dict[word[1]] # rd
-            assemly += '000000' #constant
             assemly += R_fun_dict[word[0]] #fun 
-
+            assemly += '000000' #constant
             assemly_output.append(assemly)
         
         
@@ -111,21 +111,21 @@ def Decoder(lines: list) -> list:
             if  word[0] in ['lw', 'sw']:
                 assemly = ''
                 assemly += I_op_dict[word[0]] # op  
-                assemly += register_dict[word[1]] #rs
                 a = word[2]
                 a = a.strip()
                 l = a.split('(')
                 for i in range(len(l)):
                     l[i]=l[i].strip(')')
                 l[0] = bin(int(l[0]))[2:]
-                assemly += register_dict[l[1]]#rt
+                assemly += register_dict[l[1]]
+                assemly += register_dict[word[1]] 
                 assemly += '0'*(16-len(str(l[0]))) + str(l[0]) #immi
                 
             elif word[0] in ['bne', 'beq']:
                 assemly = ''
                 assemly += I_op_dict[word[0]] # op  
-                assemly += register_dict[word[1]] #rs
-                assemly += register_dict[word[2]] #rt
+                assemly += register_dict[word[2]] #rs
+                assemly += register_dict[word[1]] #rt
 
                 if len(word[3]) == 16:
                     assemly += word[3] # address
@@ -135,8 +135,8 @@ def Decoder(lines: list) -> list:
             else:
                 assemly = ''
                 assemly += I_op_dict[word[0]] # op  
-                assemly += register_dict[word[1]] #rs
-                assemly += register_dict[word[2]] #rt
+                assemly += register_dict[word[2]]  
+                assemly += register_dict[word[1]] 
                 if len(word[2]) == 16:
                     assemly += word[-1] # address
                 else:
@@ -146,13 +146,14 @@ def Decoder(lines: list) -> list:
 
         
         else:# is j type
-            assemly = '111111'
-            assemly += '0'*(26-len(str(bin(int(word[-1])))[2:])) + str(bin(int(word[-1])))[2:]
+            assemly = '111111' #6bit op code
+            assemly = '0000000000' #10bit cnst
+            assemly += '0'*(16-len(str(bin(int(word[-1])))[2:])) + str(bin(int(word[-1])))[2:] #16bit addr
             assemly_output.append(assemly)
     return assemly_output
 
 def BinToHex(n):
-    return hex(int(n, 2))[2:]
+    return hex(int(n, 2))[2:]https://www.kaggle.com/
 
 def SaveFiles(bin_path: str, hex_path: str, bin_list: list):
     #bin:
