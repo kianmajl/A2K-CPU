@@ -153,7 +153,7 @@ def Decoder(lines: list) -> list:
     return assemly_output
 
 def BinToHex(n):
-    return hex(int(n, 2))[2:]https://www.kaggle.com/
+    return hex(int(n, 2))[2:]
 
 def SaveFiles(bin_path: str, hex_path: str, bin_list: list):
     #bin:
