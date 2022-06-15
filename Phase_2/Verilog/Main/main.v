@@ -60,7 +60,7 @@ module main(input clk);
 	end
 		
 		
-	Control_Unit control_unit(ins_data [31:26], regdst, regwrite, memwrite, memread, memtoreg, ALUsrc, beq, bne, jump, ALUop);
+	Control_Unit control_unit(ins_data [31:26], regdst, regwrite, memwrite, memread, memtoreg, ALUsrc, beq, bne, jump, ALUop, clk);
 	
 	reg [31:0] out_write_data;
 	
