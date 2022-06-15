@@ -147,7 +147,7 @@ def Decoder(lines: list) -> list:
         
         else:# is j type
             assemly = '111111' #6bit op code
-            assemly = '0000000000' #10bit cnst
+            assemly += '0000000000' #10bit cnst
             assemly += '0'*(16-len(str(bin(int(word[-1])))[2:])) + str(bin(int(word[-1])))[2:] #16bit addr
             assemly_output.append(assemly)
     return assemly_output
@@ -176,9 +176,9 @@ def SaveFiles(bin_path: str, hex_path: str, bin_list: list):
 
 # main 
 if __name__ == "__main__":
-    open_path = input('please enter a2k file path')
-    save_bin_path = input('please enter path for saving bin')
-    save_hex_path = input('please enter path for saving hex')
+    open_path = input('Please Enter A2K Code File Path: ')
+    save_bin_path = input('Please Enter Path for Saving Bin: ')
+    save_hex_path = input('Please Enter Path for Saving Hex: ')
 
     SaveFiles(save_bin_path, save_hex_path,
         Decoder(
