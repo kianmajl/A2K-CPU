@@ -21,7 +21,7 @@
 module Reg_File(input clk, input [31:0] writedata, input regwrite, input [4:0] regread_1, input [4:0] regread_2,
 					 input [4:0] regdst, output wire [31:0] reg_d1, output wire [31:0] reg_d2);	
 					 
-	reg[31:0] memory [0:65535];
+	reg[31:0] memory [0:31];
 	
 	always @(posedge clk)
 	begin
