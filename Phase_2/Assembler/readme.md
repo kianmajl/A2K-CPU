@@ -24,6 +24,6 @@
    
 ## Output Structure:
 
-This assembler generates a binary and hexadecimal code based on our [ISA](https://github.com/kianmajl/A2K-CPU/blob/main/README.md).
+This assembler generates a binary and hexadecimal code in two files based on our [ISA](https://github.com/kianmajl/A2K-CPU/blob/main/README.md).
   
 **NOTICE**: Create an input file with the mentioned sutructure and run the code. Then enter the input file path and the output will be generated with the entered path .
