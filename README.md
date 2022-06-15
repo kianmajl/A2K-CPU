@@ -66,7 +66,7 @@ The A2K's instructions follows the format below:
 
 
 ## Assembler
-Also, this project includes an assembler which is in Phase_2/Assembler/[Assembler.py](https://github.com/kianmajl/A2K-CPU/blob/main/Phase_2/Assembler/Assembler.py). More information on its readme.md
+Also, this project includes an assembler which is in Phase_2/[Assembler](https://github.com/kianmajl/A2K-CPU/tree/main/Phase_2/Assembler).
 
 
 ## Hardware Description
