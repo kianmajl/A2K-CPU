@@ -1,5 +1,5 @@
 # A2K-CPU
-A2K is a 32-bit single cycle RISC cpu based on harvard architecture with no cache or pipeline,
+A2K is a 32-bit single cycle RISC CPU based on Harvard architecture with no cache or pipeline,
 by having very simple and reduced instruction set it can be used for educational purpose.
 
 
